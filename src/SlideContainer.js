@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import firebase from "./Firebase";
-import Utility from "./utility.js"; // Used fetchFirebaseData to get variables from URL route path
+import React, { Component } from 'react';
+import firebase from './Firebase';
+import Utility from './utility.js'; // Used fetchFirebaseData to get variables from URL route path
 
 export default class SlideContainer extends Component {
   constructor(props) {
@@ -39,14 +39,14 @@ export default class SlideContainer extends Component {
       .database()
       .ref(`Modules/Module${module}/Counter/`);
 
-    timerRef.once("value").then((snapshot) => {
+    timerRef.once('value').then((snapshot) => {
       if (snapshot.exists()) {
-        let timer = snapshot.val()["Counter"]; // Snapchot returns an object
+        let timer = snapshot.val()['Counter']; // Snapchot returns an object
         this.setState({
           timer: timer,
         });
       } else {
-        console.log("Snapshot not found");
+        console.log('Snapshot not found');
       }
     });
   }
@@ -55,11 +55,11 @@ export default class SlideContainer extends Component {
     // Reference our slides
     const slidesRef = firebase
       .database()
-      .ref("Modules/Module" + module + "/Slides")
-      .orderByChild("position");
+      .ref('Modules/Module' + module + '/Slides')
+      .orderByChild('position');
 
     // Query into firebase and setstate of slides
-    slidesRef.once("value").then((snapshot) => {
+    slidesRef.once('value').then((snapshot) => {
       if (snapshot.exists()) {
         this.setState({
           slides: snapshot.val(),
@@ -68,7 +68,7 @@ export default class SlideContainer extends Component {
         this.setImageUrls();
         this.changeImage();
       } else {
-        console.log("Snapshot not found");
+        console.log('Snapshot not found');
       }
     });
   }
@@ -77,9 +77,7 @@ export default class SlideContainer extends Component {
     var arrayOfImages = [];
 
     // Loop through all the slide objects in state and push image urls to arrayOfImages
-    Object.entries(this.state.slides).map(([key, value]) =>
-      arrayOfImages.push(value.image)
-    );
+    Object.entries(this.state.slides).map(([key, value]) => arrayOfImages.push(value.image));
 
     // Set state of imageUrls
     this.setState({
@@ -113,8 +111,8 @@ export default class SlideContainer extends Component {
 
   render() {
     return (
-      <div style={{ height: "100vh", width: "100%" }}>
-        <img name="slide" height="100%" width="100%" alt="slide"></img>
+      <div style={{ height: '100vh', width: '100%' }}>
+        <img name="slide" height="100%" alt="slide"></img>
       </div>
     );
   }
