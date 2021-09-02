@@ -111,7 +111,7 @@ export default class SlideContainer extends Component {
 
   render() {
     return (
-      <div style={{ height: '100vh', width: '100%' }}>
+      <div style={{ height: '100vh' }}>
         <img name="slide" height="100%" alt="slide"></img>
       </div>
     );
