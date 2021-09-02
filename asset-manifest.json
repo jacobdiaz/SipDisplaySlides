@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/SipDisplaySlides/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/SipDisplaySlides/static/js/main.19e4f8d1.chunk.js",
-    "main.js.map": "/SipDisplaySlides/static/js/main.19e4f8d1.chunk.js.map",
+    "main.js": "/SipDisplaySlides/static/js/main.4ca5e7bb.chunk.js",
+    "main.js.map": "/SipDisplaySlides/static/js/main.4ca5e7bb.chunk.js.map",
     "runtime-main.js": "/SipDisplaySlides/static/js/runtime-main.0b8503b4.js",
     "runtime-main.js.map": "/SipDisplaySlides/static/js/runtime-main.0b8503b4.js.map",
     "static/js/2.b149903b.chunk.js": "/SipDisplaySlides/static/js/2.b149903b.chunk.js",
@@ -12,12 +12,12 @@
     "index.html": "/SipDisplaySlides/index.html",
     "static/css/main.9d5b29c0.chunk.css.map": "/SipDisplaySlides/static/css/main.9d5b29c0.chunk.css.map",
     "static/js/2.b149903b.chunk.js.LICENSE.txt": "/SipDisplaySlides/static/js/2.b149903b.chunk.js.LICENSE.txt",
-    "static/js/main.19e4f8d1.chunk.js.LICENSE.txt": "/SipDisplaySlides/static/js/main.19e4f8d1.chunk.js.LICENSE.txt"
+    "static/js/main.4ca5e7bb.chunk.js.LICENSE.txt": "/SipDisplaySlides/static/js/main.4ca5e7bb.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0b8503b4.js",
     "static/js/2.b149903b.chunk.js",
     "static/css/main.9d5b29c0.chunk.css",
-    "static/js/main.19e4f8d1.chunk.js"
+    "static/js/main.4ca5e7bb.chunk.js"
   ]
 }
