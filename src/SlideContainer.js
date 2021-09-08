@@ -8,7 +8,7 @@ export default class SlideContainer extends Component {
 
     this.state = {
       timer: null, // Keeps track of duration of slides
-      slides: {}, // Holds data of all slides in the module (position, imageUrl, module)
+      slides: [], // Holds data of all slides in the module (position, imageUrl, module)
       imageUrls: {}, // Holds Firebase URLs of images
       currentImageIndex: 0, // Used to iterate through imageUrls
     };
@@ -77,19 +77,24 @@ export default class SlideContainer extends Component {
     var arrayOfImages = [];
 
     // Loop through all the slide objects in state and push image urls to arrayOfImages
-    Object.entries(this.state.slides).map(([key, value]) => arrayOfImages.push(value.image));
+    Object.entries(this.state.slides).map(([key, value]) => arrayOfImages.push({ image: value.image, position: value.position }));
+
+    // Sort slides based on position
+    arrayOfImages.sort((a, b) => a.position - b.position);
 
     // Set state of imageUrls
     this.setState({
       imageUrls: arrayOfImages,
     });
+
+    console.log(this.state.imageUrls);
   }
 
   changeImage() {
     let { timer, currentImageIndex, imageUrls } = this.state;
 
     // Set image source to the url from firebase
-    document.slide.src = imageUrls[currentImageIndex];
+    document.slide.src = imageUrls[currentImageIndex].image;
 
     // Loop through and reset when you get to the end of the array
     if (currentImageIndex < imageUrls.length - 1) {
