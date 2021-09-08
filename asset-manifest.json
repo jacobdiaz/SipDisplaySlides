@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/SipDisplaySlides/static/css/main.a617e044.chunk.css",
-    "main.js": "/SipDisplaySlides/static/js/main.531df7df.chunk.js",
-    "main.js.map": "/SipDisplaySlides/static/js/main.531df7df.chunk.js.map",
+    "main.css": "/SipDisplaySlides/static/css/main.69823de0.chunk.css",
+    "main.js": "/SipDisplaySlides/static/js/main.15316d24.chunk.js",
+    "main.js.map": "/SipDisplaySlides/static/js/main.15316d24.chunk.js.map",
     "runtime-main.js": "/SipDisplaySlides/static/js/runtime-main.0937d560.js",
     "runtime-main.js.map": "/SipDisplaySlides/static/js/runtime-main.0937d560.js.map",
     "static/js/2.9a8e1f50.chunk.js": "/SipDisplaySlides/static/js/2.9a8e1f50.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.189b2a9c.chunk.js": "/SipDisplaySlides/static/js/3.189b2a9c.chunk.js",
     "static/js/3.189b2a9c.chunk.js.map": "/SipDisplaySlides/static/js/3.189b2a9c.chunk.js.map",
     "index.html": "/SipDisplaySlides/index.html",
-    "static/css/main.a617e044.chunk.css.map": "/SipDisplaySlides/static/css/main.a617e044.chunk.css.map",
+    "static/css/main.69823de0.chunk.css.map": "/SipDisplaySlides/static/css/main.69823de0.chunk.css.map",
     "static/js/2.9a8e1f50.chunk.js.LICENSE.txt": "/SipDisplaySlides/static/js/2.9a8e1f50.chunk.js.LICENSE.txt",
-    "static/js/main.531df7df.chunk.js.LICENSE.txt": "/SipDisplaySlides/static/js/main.531df7df.chunk.js.LICENSE.txt"
+    "static/js/main.15316d24.chunk.js.LICENSE.txt": "/SipDisplaySlides/static/js/main.15316d24.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0937d560.js",
     "static/js/2.9a8e1f50.chunk.js",
-    "static/css/main.a617e044.chunk.css",
-    "static/js/main.531df7df.chunk.js"
+    "static/css/main.69823de0.chunk.css",
+    "static/js/main.15316d24.chunk.js"
   ]
 }
